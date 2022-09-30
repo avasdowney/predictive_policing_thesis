@@ -1,0 +1,5 @@
+pandas
+numpy
+sklearn
+aif360[all]
+lime
