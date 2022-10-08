@@ -1,5 +1,4 @@
 pandas
 numpy
-sklearn
+great_expectations
 aif360[all]
-lime
