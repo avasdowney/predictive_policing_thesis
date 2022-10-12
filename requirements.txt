@@ -2,3 +2,4 @@ pandas
 numpy
 great_expectations
 aif360[all]
+seaborn
