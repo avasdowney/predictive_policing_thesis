@@ -9,3 +9,7 @@ The data dictionary for this dataset can be found [here](https://www.opendatanet
 ## Fairness
 
 IBM [AIF360](https://github.com/Trusted-AI/AIF360/tree/master) is being used to calculated bias and fairness.
+
+## Helpful Code Docs
+
+Disparate Bias: https://github.com/bryantruong/examingBiasInAI
