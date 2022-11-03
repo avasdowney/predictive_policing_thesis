@@ -13,3 +13,7 @@ IBM [AIF360](https://github.com/Trusted-AI/AIF360/tree/master) is being used to 
 ## Helpful Code Docs
 
 Disparate Bias: https://github.com/bryantruong/examingBiasInAI
+
+## Things to Look Into
+
+Census Data: Income, joblessness, education
