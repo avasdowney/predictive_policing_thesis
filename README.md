@@ -13,6 +13,9 @@ IBM [AIF360](https://github.com/Trusted-AI/AIF360/tree/master) is being used to 
 ## Helpful Code Docs
 
 Disparate Bias: https://github.com/bryantruong/examingBiasInAI
+Statistical Parity: https://consileon.ai/wp-content/uploads/2021/08/Fairness-in-AI-Systems.pdf 
+
+https://colab.research.google.com/drive/1QVXhGr93ex9Gdovo7WO3ogK39Qn8uQ7Q?usp=sharing#scrollTo=BojAx75gCaKl
 
 ## Things to Look Into
 

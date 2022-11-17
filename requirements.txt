@@ -5,3 +5,4 @@ aif360[all]
 seaborn
 matplotlib
 scikit-learn
+censusdata
