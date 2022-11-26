@@ -20,3 +20,7 @@ https://colab.research.google.com/drive/1QVXhGr93ex9Gdovo7WO3ogK39Qn8uQ7Q?usp=sh
 ## Things to Look Into
 
 Census Data: Income, joblessness, education
+
+## Things to Read
+
+Chicago Predictive Policing: https://www.nacdl.org/getattachment/9d276b57-0d3f-477a-90fb-5a00c003edff/rand-ssl-study.pdf 

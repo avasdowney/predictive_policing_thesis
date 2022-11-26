@@ -11,11 +11,11 @@ from common_utils import compute_metrics
 
 np.random.seed(1)
 
-# ----------------------------------
-#        HELPER FUNCTIONS
-# ----------------------------------
-
 def bias_metrics(privileged_groups, unprivileged_groups):
+    # train test split
+    dataset_orig_train, dataset_orig_vt = binaryLabelDataset.split([0.7], shuffle=True)
+    dataset_orig_valid, dataset_orig_test = dataset_orig_vt.split([0.5], shuffle=True)
+
     # Logistic regression classifier and predictions
     scale_orig = StandardScaler()
     X_train = scale_orig.fit_transform(dataset_orig_train.features)
@@ -109,7 +109,7 @@ for feature in categoricalFeatures:
 #        FAIRNESS FOR RACE
 # ----------------------------------
 
-print('\n\n--------------------------------\nRACE vs SSL SCORE BIAS METRICS\n--------------------------------')
+print('\n\n--------------------------------\n RACE vs SSL SCORE BIAS METRICS\n--------------------------------')
 
 binaryLabelDataset = aif360.datasets.BinaryLabelDataset(
     favorable_label=1,
@@ -126,16 +126,13 @@ dataset_orig_train, dataset_orig_test = binaryLabelDataset.split([0.7], shuffle=
 privileged_groups = [{'RACE CODE CD': 1}]
 unprivileged_groups = [{'RACE CODE CD': 0}]
 
-dataset_orig_train, dataset_orig_vt = binaryLabelDataset.split([0.7], shuffle=True)
-dataset_orig_valid, dataset_orig_test = dataset_orig_vt.split([0.5], shuffle=True)
-
 bias_metrics(privileged_groups, unprivileged_groups)
 
 # ----------------------------------
 #         FAIRNESS FOR SEX
 # ----------------------------------
 
-print('\n\n--------------------------------\nSEX vs SSL SCORE BIAS METRICS\n--------------------------------')
+print('\n\n--------------------------------\n SEX vs SSL SCORE BIAS METRICS\n--------------------------------')
 
 binaryLabelDataset = aif360.datasets.BinaryLabelDataset(
     favorable_label=1,
@@ -152,16 +149,13 @@ dataset_orig_train, dataset_orig_test = binaryLabelDataset.split([0.7], shuffle=
 privileged_groups = [{'SEX CODE CD': 1}]
 unprivileged_groups = [{'SEX CODE CD': 0}]
 
-dataset_orig_train, dataset_orig_vt = binaryLabelDataset.split([0.7], shuffle=True)
-dataset_orig_valid, dataset_orig_test = dataset_orig_vt.split([0.5], shuffle=True)
-
 bias_metrics(privileged_groups, unprivileged_groups)
 
 # ----------------------------------
 #         FAIRNESS FOR AGE
 # ----------------------------------
 
-print('\n\n--------------------------------\nAGE vs SSL SCORE BIAS METRICS\n--------------------------------')
+print('\n\n--------------------------------\n AGE vs SSL SCORE BIAS METRICS\n--------------------------------')
 
 binaryLabelDataset = aif360.datasets.BinaryLabelDataset(
     favorable_label=1,
@@ -178,7 +172,8 @@ dataset_orig_train, dataset_orig_test = binaryLabelDataset.split([0.7], shuffle=
 privileged_groups = [{'AGE GROUP': 1}]
 unprivileged_groups = [{'AGE GROUP': 0}]
 
-dataset_orig_train, dataset_orig_vt = binaryLabelDataset.split([0.7], shuffle=True)
-dataset_orig_valid, dataset_orig_test = dataset_orig_vt.split([0.5], shuffle=True)
-
 bias_metrics(privileged_groups, unprivileged_groups)
+
+# ----------------------------------
+#        GRAPH BIAS METRICS
+# ----------------------------------
