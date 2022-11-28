@@ -17,6 +17,8 @@ Statistical Parity: https://consileon.ai/wp-content/uploads/2021/08/Fairness-in-
 
 https://colab.research.google.com/drive/1QVXhGr93ex9Gdovo7WO3ogK39Qn8uQ7Q?usp=sharing#scrollTo=BojAx75gCaKl
 
+Convert ipynb to py command: jupyter nbconvert --to script notebook.ipynb
+
 ## Things to Look Into
 
 Census Data: Income, joblessness, education
