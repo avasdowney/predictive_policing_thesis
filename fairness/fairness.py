@@ -173,7 +173,3 @@ privileged_groups = [{'AGE GROUP': 1}]
 unprivileged_groups = [{'AGE GROUP': 0}]
 
 bias_metrics(privileged_groups, unprivileged_groups)
-
-# ----------------------------------
-#        GRAPH BIAS METRICS
-# ----------------------------------
