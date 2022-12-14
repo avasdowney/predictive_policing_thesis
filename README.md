@@ -23,8 +23,10 @@ Convert ipynb to py command: jupyter nbconvert --to script notebook.ipynb
 
 Census Data: Income, joblessness, education
 
-neural network, svm, logistic regression, ...
+neural network, svm, ...
 ONE LINEAR, NEURAL NETWORK
+
+SVM - kernel linear, non-linear (maybe)
 
 innate bias
 

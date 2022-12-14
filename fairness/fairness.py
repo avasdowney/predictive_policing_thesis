@@ -95,7 +95,7 @@ def bias_metrics(privileged_groups, unprivileged_groups):
 # ----------------------------------
 
 # read data
-df = pd.read_csv('data/preprocessed_data.csv')
+df = pd.read_csv('data/preprocessed_aif360_data.csv')
 
 # one hot encode helpful columns
 categoricalFeatures = ['WEAPON I', 'DRUG I', 'AGE TO', 'PAROLEE I', 'CPD ARREST I', 'AGE CURR', 'COMMUNITY AREA']
