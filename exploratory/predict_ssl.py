@@ -17,22 +17,8 @@ np.random.seed(1)
 
 
 # read data
-df = pd.read_csv('../data/Strategic_Subject_List_-_Historical.csv')
-df = df[['SSL SCORE', 'PREDICTOR RAT AGE AT LATEST ARREST', 'PREDICTOR RAT VICTIM SHOOTING INCIDENTS', 'PREDICTOR RAT VICTIM BATTERY OR ASSAULT', 'PREDICTOR RAT ARRESTS VIOLENT OFFENSES', 'PREDICTOR RAT GANG AFFILIATION', 'PREDICTOR RAT NARCOTIC ARRESTS', 'PREDICTOR RAT TREND IN CRIMINAL ACTIVITY', 'PREDICTOR RAT UUW ARRESTS']]
-df.dropna()
+df = pd.read_csv('../data/preprocessed_models_data.csv')
 df.describe()
-
-
-# In[43]:
-
-
-# One-hot encode the data using pandas get_dummies
-df = pd.get_dummies(df)
-df.head()
-
-
-# In[44]:
-
 
 # Labels are the values we want to predict
 labels = np.array(df['SSL SCORE'])
