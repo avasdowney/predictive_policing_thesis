@@ -22,6 +22,8 @@ Convert ipynb to py command: jupyter nbconvert --to script notebook.ipynb
 ## Things to Look Into
 
 Census Data: Income, joblessness, education
+Options: https://censusreporter.org/topics/table-codes/
+Codes: https://api.census.gov/data/2014/acs/acs5/variables.html
 
 neural network, svm, ...
 ONE LINEAR, NEURAL NETWORK
