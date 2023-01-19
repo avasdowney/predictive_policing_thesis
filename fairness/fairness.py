@@ -98,7 +98,7 @@ def bias_metrics(privileged_groups, unprivileged_groups):
 df = pd.read_csv('data/preprocessed_aif360_data.csv')
 
 # one hot encode helpful columns
-categoricalFeatures = ['WEAPON I', 'DRUG I', 'AGE TO', 'PAROLEE I', 'CPD ARREST I', 'AGE CURR', 'COMMUNITY AREA']
+categoricalFeatures = ['PREDICTOR RAT AGE AT LATEST ARREST', 'PREDICTOR RAT VICTIM SHOOTING INCIDENTS', 'PREDICTOR RAT VICTIM BATTERY OR ASSAULT', 'PREDICTOR RAT ARRESTS VIOLENT OFFENSES', 'PREDICTOR RAT GANG AFFILIATION', 'PREDICTOR RAT NARCOTIC ARRESTS', 'PREDICTOR RAT TREND IN CRIMINAL ACTIVITY', 'PREDICTOR RAT UUW ARRESTS']
 
 for feature in categoricalFeatures:
     onehot = pd.get_dummies(df[feature], prefix=feature)
