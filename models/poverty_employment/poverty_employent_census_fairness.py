@@ -299,8 +299,8 @@ def bias_metrics_rf(privileged_groups, unprivileged_groups):
 # ----------------------------------
 
 # read data
-df = pd.read_csv('data/all_census_aif360_data.csv')
-# df = df.head(2000)
+df = pd.read_csv('../../data/all_census_aif360_data.csv')
+df = df.head(25000)
 
 # one hot encode helpful columns
 categoricalFeatures = ['Poverty_Rate', 'Employment_Rate', 'PREDICTOR RAT AGE AT LATEST ARREST', 'PREDICTOR RAT VICTIM SHOOTING INCIDENTS', 'PREDICTOR RAT VICTIM BATTERY OR ASSAULT', 'PREDICTOR RAT ARRESTS VIOLENT OFFENSES', 'PREDICTOR RAT GANG AFFILIATION', 'PREDICTOR RAT NARCOTIC ARRESTS', 'PREDICTOR RAT TREND IN CRIMINAL ACTIVITY', 'PREDICTOR RAT UUW ARRESTS']
