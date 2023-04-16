@@ -12,14 +12,14 @@ This repository provides the code used to come to the conclusions found in this 
 
 ## Dataset
 
-The dataset used for this project can be found [here](https://data.cityofchicago.org/Public-Safety/Strategic-Subject-List-Historical/4aki-r3np).
+The data used by Chicago Police for their predictive policing models was made publicly available in 2020 and is one of the only of its kind. This dataset is called [Strategic Subject List (SSL) - Historical](https://data.cityofchicago.org/Public-Safety/Strategic-Subject-List-Historical/4aki-r3np) and it is used by the city of Chicago, Illinois to predict the likelihood of residents being involved in a shooting. This dataset is a de-identified listing of arrest data for 398,684 people from August 1, 2012, to July 31, 2016, used by the Chicago Police Department’s Strategic Subject Algorithm, or their predictive policing algorithm. 
 
 The data dictionary for this dataset can be found [here](https://www.opendatanetwork.com/dataset/data.cityofchicago.org/4aki-r3np).
 
 
 ## Fairness Tools
 
-IBM [AIF360](https://github.com/Trusted-AI/AIF360/tree/master) is being used to calculated bias and fairness. Their reweight tool is also used to mitigate bias.
+IBM [AIF360](https://github.com/Trusted-AI/AIF360/tree/master) is being used to calculate bias and fairness. Their reweight tool is also used to mitigate bias.
 
 ## Resources Used
 
